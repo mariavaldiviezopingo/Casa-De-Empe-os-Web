@@ -6,12 +6,16 @@ import Pasos from "../components/Pasos.astro"
 import Beneficios from "../components/Beneficios.astro";
 import Testimonios from "../components/Testimonios.astro"
 import Faq from "../components/Faq.astro"
+import Footer from "../components/Footer.astro";
+import '../styles/input.css'
+import '../styles/output.css'
+import Nosotros from "../components/Nosotros.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Casa-De-Emepeños">
 	<main>
 		<Header />
-		<Banner />
+		<Nosotros />
 		<!-- Sección de Pasos -->
 		<Pasos />
 		<!--seccion beneficios -->
@@ -20,15 +24,9 @@ import Faq from "../components/Faq.astro"
 		<Testimonios />
 		<!-- Sección de Preguntas Frecuentes -->
 		<Faq />
+		<!--Footer -->
+		<Footer/>
 	</main>
 </Layout>
 
-<style>
-	main {
-		margin: 0;
-		padding: 0;
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-</style>
+

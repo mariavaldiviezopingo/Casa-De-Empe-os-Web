@@ -1,5 +1,136 @@
 ---
-
 ---
+<script>
+    const accordionHeader2 = document.querySelectorAll('.accordion-header2');
 
-<h1>Aqui va la seccion de beneficios</h1>
+    accordionHeader2.forEach((header) => {
+        header.addEventListener('click', () => {
+            const accordionBody2 = header.nextElementSibling; 
+            const accordionContainer2 = header.parentElement; 
+
+            header.classList.toggle('active');
+
+            if (header.classList.contains('active')) {
+                accordionBody2.style.maxHeight = accordionBody2.scrollHeight + 'px';
+                accordionContainer2.classList.add('border');
+            } else {
+                accordionContainer2.classList.remove('border');
+                accordionBody2.style.maxHeight = 0;
+            }
+        });
+    });
+</script>
+
+<div class="flex bg-white clip-path-logo3 h-[55rem]">
+    <div class=" text-black mt-24">
+        <div class="lg:h-[50rem] lg:pl-32 ">
+            <div class="text-left pl-4 mt-20 mb-4">
+                <h1 class=" inline-block text-center font-semibold  text-3xl mb-3  ">¿Por qué hacerlo?</h1>
+                <p>Por los múltiples beneficiones que tenemos para ti </p>
+            </div>
+                
+        
+            <div class="lg:max-w-screen-lg px-5 accordion-space ">
+                   <div class="rounded-xl border-1  ">
+                    <div class="accordion-header2 flex items-center justify-start gap-2">
+                        <i class="bx bx-chevron-down text-3xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#58d68d"><path d="m480-340 180-180-57-56-123 123-123-123-57 56 180 180Zm0 260q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                        </i>
+                        <span class="font-semibold text-lg" >¿Qué tipos de Joyas puedo utilizar como garantia?<span>
+                            
+                    </div>
+        
+                        <div class="accordion-body mx-auto ">
+                            <div class="p-4 pl-16">
+                                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam vitae accusamus autem. Ipsum ad nostrum illo, omnis voluptates quas a asperiores vitae iusto ratione atque reiciendis similique numquam nemo pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque nulla, magnam minus totam reiciendis quis alias sed sunt et cum voluptate assumenda itaque omnis excepturi obcaecati iste consequatur suscipit.</p>
+                                
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <div class="max-w-screen-lg  px-5 accordion-space" >
+                    <div class= "rounded-xl border-1 ">
+                        <div class="accordion-header2 flex items-center justify-start gap-2">
+                            <i class="bx bx-chevron-down text-3xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#58d68d"><path d="m480-340 180-180-57-56-123 123-123-123-57 56 180 180Zm0 260q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                            </i>
+                            <span class=" font-semibold text-lg">¿Cuanto tiempo tengo de garantía?<span>
+                            
+                        </div>
+        
+                        <div class="accordion-body  ">
+                            <div class="p-4 pl-16">
+                                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam vitae accusamus autem. Ipsum ad nostrum illo, omnis voluptates quas a asperiores vitae iusto ratione atque reiciendis similique numquam nemo pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque nulla, magnam minus totam reiciendis quis alias sed sunt et cum voluptate assumenda itaque omnis excepturi obcaecati iste consequatur suscipit.</p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <div class="max-w-screen-lg px-5 accordion-space">
+                    <div class=" rounded-xl border-1 ">
+                        <div class="accordion-header2 flex items-center justify-start gap-2">
+                            <i class="bx bx-chevron-down text-3xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#58d68d"><path d="m480-340 180-180-57-56-123 123-123-123-57 56 180 180Zm0 260q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                            </i>
+                            <span class=" font-semibold text-lg">¿Qué ocurre si quiero retirar mis joyas antes de terminar el plazo del préstamo?<span>
+                            
+                        </div>
+        
+                        <div class="accordion-body ">
+                            <div class="p-4 pl-16">
+                                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam vitae accusamus autem. Ipsum ad nostrum illo, omnis voluptates quas a asperiores vitae iusto ratione atque reiciendis similique numquam nemo pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque nulla, magnam minus totam reiciendis quis alias sed sunt et cum voluptate assumenda itaque omnis excepturi obcaecati iste consequatur suscipit.</p>
+                                
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <div class="max-w-screen-lg  px-5 accordion-space">
+                    <div class="rounded-xl border-1 ">
+                        <div class="accordion-header2 flex items-center justify-start gap-2">
+                            <i class="bx bx-chevron-down text-3xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#58d68d"><path d="m480-340 180-180-57-56-123 123-123-123-57 56 180 180Zm0 260q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                            </i>
+                            <span class=" font-semibold text-lg">¿Es seguro dejar mis joyas en custodia?<span>
+                            
+                        </div>
+        
+                        <div class="accordion-body ">
+                            <div class="p-4 pl-16">
+                                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam vitae accusamus autem. Ipsum ad nostrum illo, omnis voluptates quas a asperiores vitae iusto ratione atque reiciendis similique numquam nemo pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque nulla, magnam minus totam reiciendis quis alias sed sunt et cum voluptate assumenda itaque omnis excepturi obcaecati iste consequatur suscipit.</p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <div class="max-w-screen-lg  px-5 accordion-space">
+                    <div class="rounded-xl border-1 " >
+                        <div class="accordion-header2 flex items-center justify-start gap-2">
+                            <i class="bx bx-chevron-down text-3xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#58d68d"><path d="m480-340 180-180-57-56-123 123-123-123-57 56 180 180Zm0 260q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+                            </i>
+                            <span class=" font-semibold text-lg">¿Que pasa si no puedo pagar el préstamo a tiempo?<span>
+                            
+                        </div>
+        
+                        <div class="accordion-body ">
+                            <div class="p-4 pl-16">
+                                <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam vitae accusamus autem. Ipsum ad nostrum illo, omnis voluptates quas a asperiores vitae iusto ratione atque reiciendis similique numquam nemo pariatur?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut neque nulla, magnam minus totam reiciendis quis alias sed sunt et cum voluptate assumenda itaque omnis excepturi obcaecati iste consequatur suscipit.</p>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>  
+    </div>
+    <div class="lg:flex items-start hidden pt-48 px-32">
+        <img class="max-w-96 " src="https://cdn-icons-png.flaticon.com/512/18252/18252145.png" alt="">
+    </div>
+ </div>
+
+ 
