@@ -15,6 +15,13 @@
   .clip-path-logo4 {
     clip-path: circle();
   }
+  .clip-path-logo5 {
+    clip-path: polygon(100% 0%, 100% 80%, 50% 100%, 0 80%, 0 0%);
+  }
+  .clip-path-logo6 {
+        clip-path: polygon(70% 0%, 100% 100%, 0% 100%, 0 100%, 0 0%);
+  }
+
 }
 
 @layer components {

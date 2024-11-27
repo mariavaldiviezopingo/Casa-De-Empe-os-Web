@@ -7,7 +7,11 @@ export default {
 			  customAzul1:'#0A274A',
 			  customAzul2:'#185DB0',
 			  customDorado:'#D9AA46',
-			  customRojo:'#AC0002'
+			  customAzul3: {
+			    DEFAULT: '#0A274A',
+				50: 'rgba(10, 39, 74, 0.5)', // Para bg-opacity-50
+				100: '#0A274A', // Para bg-opacity-100
+			  },
 			},
 			flexGrow:{
 			  Grow2:'2',
