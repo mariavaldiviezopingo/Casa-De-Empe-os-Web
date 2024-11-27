@@ -26,7 +26,8 @@ export default {
 	  
 			},
 			screens:{
-			  sm2: '480px'
+			  sm2: '480px',
+			  sm3: '0px'
 			},
 			fontSize:{
 			  xs2:['0.5rem', { lineHeight: '0.75rem' }]
