@@ -2,7 +2,16 @@
 
 ---
 
-<div
-  class="relative h-[720px] overflow-hidden bg-[url('./public/Imagenes/imagen4.png')] bg-cover bg-[50%] bg-no-repeat clip-path-logo5"
->
+<div class="relative">
+  <!-- Imagen de fondo con opacidad -->
+  <div class="relative h-[400px] sm:h-[600px] md:h-[700px] lg:h-[850px] overflow-hidden bg-[url('./public/Imagenes/banner1.jpg')] bg-cover bg-center bg-no-repeat lg:clip-path-logo5 sm:clip-path-logo7 clip-path-logo7">
+    <!-- Capa de superposición -->
+    <div class="absolute inset-0 bg-black/50"></div>
+
+    <!-- Contenedor del texto -->
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white gap-4 sm:gap-8 lg:flex-row lg:gap-20">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center lg:text-left">TU PRÉSTAMO</h1>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center lg:text-left">ALTOQUEEEE!</h1>
+    </div>
+  </div>
 </div>

@@ -4,13 +4,14 @@ export default {
 	theme: {
 		extend: {
 			colors:{
-			  customAzul1:'#0A274A',
-			  customAzul2:'#185DB0',
+			  customPrincipal:'#FFFFFF',
+			  customAzul:'#0F2F76',
 			  customDorado:'#D9AA46',
-			  customAzul3: {
-			    DEFAULT: '#0A274A',
-				50: 'rgba(10, 39, 74, 0.5)', // Para bg-opacity-50
-				100: '#0A274A', // Para bg-opacity-100
+			  customnav: '#000',
+			  customPrincipal1: {
+			    DEFAULT: '#E42229',
+				50: 'rgba(228, 34, 41, 1)', // Para bg-opacity-50
+				100: '#E42229', // Para bg-opacity-100
 			  },
 			},
 			flexGrow:{

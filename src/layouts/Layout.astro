@@ -19,11 +19,13 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="bg-gradient-to-b from-customAzul1 to-customAzul2 bg-no-repeat">
+	<body class="bg-gradient-to-r from-customPrincipal1 to-customAzul min-h-screen bg-no-repeat">
 		<Header />
 		<main>
-			<slot />
+		  <slot />
 		</main>
 		<Footer />
-	</body>
+	  </body>
+	  
+	  
 </html>
