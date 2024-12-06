@@ -7,6 +7,12 @@ export default {
 			  customAzul1:'#0A274A',
 			  customAzul2:'#185DB0',
 			  customDorado:'#D9AA46',
+				blue: '#243c5a',
+        azul : '#151A6D',
+        nabvar: '#1656A6',
+        doradotext : '#ECC747',
+				colorfooter: '#0F2F76',
+				colorbanner: '#E42229',
 			  customAzul3: {
 			    DEFAULT: '#0A274A',
 				50: 'rgba(10, 39, 74, 0.5)', // Para bg-opacity-50
