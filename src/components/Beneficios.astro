@@ -2,25 +2,26 @@
 
 ---
 
+
 <script>
-    const accordionHeader2 = document.querySelectorAll('.accordion-header2');
+  const accordionHeader2 = document.querySelectorAll(".accordion-header2");
 
-    accordionHeader2.forEach((header) => {
-        header.addEventListener('click', () => {
-            const accordionBody2 = header.nextElementSibling; 
-            const accordionContainer2 = header.parentElement; 
+  accordionHeader2.forEach((header) => {
+    header.addEventListener("click", () => {
+      const accordionBody2 = header.nextElementSibling;
+      const accordionContainer2 = header.parentElement;
 
-            header.classList.toggle('active');
+      header.classList.toggle("active");
 
-            if (header.classList.contains('active')) {
-                accordionBody2.style.maxHeight = accordionBody2.scrollHeight + 'px';
-                accordionContainer2.classList.add('border');
-            } else {
-                accordionContainer2.classList.remove('border');
-                accordionBody2.style.maxHeight = 0;
-            }
-        });
+      if (header.classList.contains("active")) {
+        accordionBody2.style.maxHeight = accordionBody2.scrollHeight + "px";
+        accordionContainer2.classList.add("border");
+      } else {
+        accordionContainer2.classList.remove("border");
+        accordionBody2.style.maxHeight = 0;
+      }
     });
+  });
 </script>
 
 <div class="flex  h-auto pb-20">

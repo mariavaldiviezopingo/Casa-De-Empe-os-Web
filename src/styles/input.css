@@ -40,12 +40,21 @@
     @apply py-4 px-6  cursor-pointer;
   }
 
+  .accordion-header3 {
+    @apply py-4 px-6  cursor-pointer;
+  }
+
   .accordion-header.active svg {
     @apply transition ease-in-out duration-300;
     transform: rotateX(180deg);
   }
 
   .accordion-header2.active i {
+    @apply transition ease-in-out duration-300;
+    transform: rotateX(180deg);
+  }
+
+  .accordion-header3.active i {
     @apply transition ease-in-out duration-300;
     transform: rotateX(180deg);
   }

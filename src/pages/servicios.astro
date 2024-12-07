@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Bannerservi from "../components/Servicios/Bannerservi.astro";
+import Garantiaservi from "../components/Servicios/Garantiaservi.astro";
+import Beneficioservi from "../components/Servicios/Beneficioservi.astro";
+import Necesito from "../components/Servicios/Necesito.astro";
+import Diferente from "../components/Servicios/Diferente.astro";
+import "../styles/input.css";
+import "../styles/output.css";
+---
+
+<Layout title="servicios">
+  <div class="bg-gradient-to-b from-colorbanner to-colorfooter bg-no-repeat">
+    <Bannerservi />
+    <Garantiaservi />
+    <Beneficioservi />
+    <Necesito />
+    <Diferente />
+  </div>
+</Layout>
