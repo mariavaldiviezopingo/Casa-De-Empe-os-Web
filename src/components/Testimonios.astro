@@ -42,6 +42,48 @@
     </div>
   </div>
   
-  </div>
   
+  <script>
+    const testimonials = [
+      {
+        img: 'https://pymstatic.com/5844/conversions/personas-emocionales-wide_webp.webp',
+        text: 'Necesitaba un préstamo rápido para cubrir una emergencia médica y no quería afectar mi historial crediticio. Gracias a Casa_De_Empeños_Piura, pude obtener el dinero que necesitaba de manera rápida y segura, utilizando mis anillos de compromiso como garantía. ¡Muy recomendable!',
+        name: 'María López'
+      },
+      {
+        img: 'https://example.com/testimonio2.jpg',
+        text: 'Gracias a esta casa de empeños, pude financiar un proyecto personal sin complicaciones. Recomiendo totalmente el servicio.',
+        name: 'Carlos Pérez'
+      },
+      {
+        img: 'https://example.com/testimonio3.jpg',
+        text: 'Excelente atención y rapidez. Volvería a confiar en ellos para cualquier necesidad financiera.',
+        name: 'Ana Fernández'
+      }
+    ];
+  
+    let currentIndex = 0;
+    const imgElement = document.querySelector('#testimonial-container img');
+    const textElement = document.querySelector('#testimonial-container p:first-of-type');
+    const nameElement = document.querySelector('#testimonial-container p:last-of-type');
+  
+    function updateTestimonial(index) {
+      imgElement.src = testimonials[index].img;
+      textElement.textContent = `"${testimonials[index].text}"`;
+      nameElement.textContent = testimonials[index].name;
+    }
+  
+    // Actualizar al cargar
+    updateTestimonial(currentIndex);
+  
+    document.getElementById('prev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+      updateTestimonial(currentIndex);
+    });
+  
+    document.getElementById('next').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      updateTestimonial(currentIndex);
+    });
+  </script>
   
