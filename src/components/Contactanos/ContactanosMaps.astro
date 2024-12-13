@@ -1,36 +1,22 @@
-<div class="h-[50vh] flex bg-white md:flex-row sm3:flex-col md:items-start md:justify-start sm3:items-center sm3:justify-center ">
-    <div id="map" class="md:w-2/3 sm3:w-full sm3:h-full ">
-
-    </div>
-    <div class="px-12 md:my-auto py-12">
-        <h3 class="text-red-600  font-bold text-3xl  pb-1">Ubicanos aquí</h3>
-        <p class="pb-6 text-xl font-semibold">Estamos a un click de distancia</p>
-        <div class="flex items-center space-x-2">
-            <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M480-301q99-80 149.5-154T680-594q0-90-56-148t-144-58q-88 0-144 58t-56 148q0 65 50.5 139T480-301Zm0 101Q339-304 269.5-402T200-594q0-125 78-205.5T480-880q124 0 202 80.5T760-594q0 94-69.5 192T480-200Zm0-320q33 0 56.5-23.5T560-600q0-33-23.5-56.5T480-680q-33 0-56.5 23.5T400-600q0 33 23.5 56.5T480-520ZM200-80v-80h560v80H200Zm280-520Z"/></svg>
-            <p class="text-xl font-semibold">Jiron Callao 375 - Piura</p>
+<div class="h-[50vh] flex bg-white md:flex-row sm3:flex-col md:items-start md:justify-start sm3:items-center sm3:justify-center">
+                
+    <iframe class="md:w-2/3 md:h-full sm3:w-full sm3:h-3/4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d993.3708100423114!2d-80.64331546899473!3d-5.186447551576225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x904a1a9a8e71f6e7%3A0x9628688447161e28!2sAparcamiento%2C%20Av.%20S%C3%A1nchez%20Cerro%2C%20Piura%2020001!5e0!3m2!1ses-419!2spe!4v1734120460251!5m2!1ses-419!2spe"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        <div class="px-12 md:my-auto  md:py-12 sm3:py-4 sm3:h-auto sm3:text-center md:text-left">
+            <h3 class="text-red-600  font-bold text-3xl  pb-1 ">Ubicanos aquí</h3>
+            <p class="pb-6 text-xl font-semibold">Estamos a un click de distancia</p>
+            <div>
+                <img src="" alt="">
+                <p class="text-xl font-semibold">Jiron Callao 375 - Piura</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p class="text-xl font-semibold">casaempeños@gmail.com</p>
+            </div>
+            <div>
+                <img src="" alt="">
+                <p class="text-xl font-semibold">978781880 - 969657831</p>
+            </div>
         </div>
-        <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
-            <p class="text-xl font-semibold">casaempeños@gmail.com</p>
-        </div>
-        <div class="flex items-center space-x-2">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00000"><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v720q0 33-23.5 56.5T680-40H280Zm0-200v120h400v-120H280Zm200 100q17 0 28.5-11.5T520-180q0-17-11.5-28.5T480-220q-17 0-28.5 11.5T440-180q0 17 11.5 28.5T480-140ZM280-320h400v-400H280v400Zm0-480h400v-40H280v40Zm0 560v120-120Zm0-560v-40 40Z"/></svg>
-            <p class="text-xl font-semibold">978781880 - 969657831</p>
-        </div>
-    </div>
+    
 </div>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
-<script>
-    function iniciarMap(){
-    var coord = {lat:-5.1850445 ,lng: -80.641844};
-    var map = new google.maps.Map(document.getElementById('map'),{
-      zoom: 15,
-      center: coord
-    });
-    var marker = new google.maps.Marker({
-      position: coord,
-      map: map
-    });
-}
-</script>
