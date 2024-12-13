@@ -24,6 +24,9 @@
   .clip-path-servicios {
     clip-path: polygon(100% 0%, 100% 80%, 50% 100%, 0 80%, 0 0%);
   }
+  .clip-path-beneficios {
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
 }
 
 @layer components {
