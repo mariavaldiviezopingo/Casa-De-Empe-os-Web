@@ -7,9 +7,6 @@ interface Props {
 
 const { title } = Astro.props;
 
-
-import Footer from "../components/Footer.astro";
-import Header from "@/components/Header.astro";
 ---
 
 <!doctype html>
@@ -21,6 +18,8 @@ import Header from "@/components/Header.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	</head>
 	<body class="bg-gradient-to-r from-customPrincipal1 to-customAzul min-h-screen bg-no-repeat">
 		<Header />
@@ -29,6 +28,18 @@ import Header from "@/components/Header.astro";
 		</main>
 		<Footer />
 	  </body>
-	  
-	  
+	    <!-- Script de AOS con defer -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+		<!-- Inicialización de AOS en un bloque script -->
+		<script>
+		  document.addEventListener("DOMContentLoaded", function () {
+			// Asegurarse de que AOS se haya cargado correctamente
+			if (typeof AOS !== "undefined") {
+			  AOS.init();
+			} else {
+			  console.error("AOS no se ha cargado correctamente.");
+			}
+		  });
+		</script> 
 </html>
