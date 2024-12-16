@@ -1,5 +1,5 @@
 <div class="h-auto text-white pt-16 pb-24 ">
-    <div class="flex md:flex-row sm3:flex-col md:items-start md:justify-start sm3:justify-center sm3:items-center ">
+    <div class="flex md:flex-row sm3:flex-col md:items-start md:justify-start  items-center ">
         <div class="flex-grow  px-12 pb-12">
             <div class="flex flex-col items-center relative ">
                 <h3 class="text-3xl font-semibold max-w-md">¿Tienes alguna duda o consulta? Nosotros te podemos ayudar</h3>
@@ -7,18 +7,19 @@
                 <img  class="w-80 " src="public/Imagenes/undraw1.svg" alt="">
             </div>
         </div>
-        <div class="flex-grow  px-12 ">
+        <div class="md:flex-grow  md:px-12 min-w-96  px-4  ">
             <div class="border p-8 rounded-2xl bg-black/20 max-w-lg">
                 <form action="" class="flex flex-col ">
                     <label class="pb-2 text-2xl" for="">Nombre:</label>
-                    <input class="rounded-2xl bg-transparent border py-2 text-xl px-3" type="text">
+                    <input class="rounded-2xl bg-transparent border py-2 text-xl px-3" type="text" name="username"  required>
                     <label class="pt-4 pb-2 text-2xl" for="">Correo:</label>
-                    <input class="rounded-2xl bg-transparent border py-2 text-xl px-3" type="email">
+                    <input class="rounded-2xl bg-transparent border py-2 text-xl px-3" type="email" required>
                     <label class="pt-4 pb-2 text-2xl" for="">Asunto:</label>
-                    <input class="rounded-2xl bg-transparent border py-2 text-xl px-3" type="text">
+                    <input class="rounded-2xl bg-transparent border py-2 text-xl px-3" type="text" required>
                     <label class="pt-4 pb-2 text-2xl" for="">Mensaje</label>
-                    <textarea  class="mb-4 rounded-2xl bg-transparent border py-2 h-36 text-xl px-3" name="" id=""></textarea>
-                    <button class="bg-red-600 rounded-2xl py-3 text-2xl my-4" type="button">Enviar</button>
+                    <textarea  class="mb-4 rounded-2xl bg-transparent border py-2 h-36 text-xl px-3" name="" id=""  required ></textarea>
+                    
+                    <button class="bg-red-600 rounded-2xl py-3 text-2xl my-4" type="submit">Enviar</button>
                 </form>
             </div>
         </div>
